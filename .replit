@@ -1,0 +1,6 @@
+run = "pip install -r requirements.txt && python seed_data.py && streamlit run app.py --server.port 8080 --server.address 0.0.0.0"
+entrypoint = "app.py"
+
+[deployment]
+run = ["sh", "-c", "pip install -r requirements.txt && python seed_data.py && streamlit run app.py --server.port 8080 --server.address 0.0.0.0"]
+deploymentTarget = "cloudrun"
