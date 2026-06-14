@@ -1,6 +1,6 @@
 streamlit
-chromadb
 anthropic
 pypdf
 docx2txt
 sentence-transformers
+numpy
